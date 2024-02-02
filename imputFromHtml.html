@@ -2,24 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
-    <label>Enter your name:</label> <br />
-    <input type="text" name="inputBox" id="inputBox" />
+    <label>Enter your name:</label><br>
+    <input type="text" name="inputBox" id="inputBox">
     <button type="button" id="myButton">Submit</button>
     <p id="output"></p>
 
     <script>
-        let userName;
-        document.getElementById("myButton").onclick = function () {
-            userName = document.getElementById("inputBox").value;
-            document.getElementById("output").innerHTML =
-                "Your name is " + userName;
-        };
+        function handleButtonClick() {
+            let userName = document.getElementById("inputBox").value;
+            document.getElementById("output").textContent = "Your name is " + userName;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("myButton").addEventListener("click", handleButtonClick);
+        });
     </script>
 </body>
 
