@@ -1,0 +1,51 @@
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+}
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+.btt {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#year {
+  color: green;
+  border: none;
+  border-bottom: 2px solid green;
+  text-align: center;
+}
+
+.output1,
+.year {
+  display: block;
+  color: green;
+  display: inline-block;
+}
+.output2,
+.not {
+  display: block;
+  color: red;
+  display: inline-block;
+}
+
+.footer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+marquee {
+  cursor: pointer;
+}
