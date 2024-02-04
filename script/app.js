@@ -1,14 +1,18 @@
 leapCheck = () => {
   const year = document.getElementById("year").value;
   const output = document.getElementById("output");
-  console.log(year);
+  const ln = year.length;
 
-  if (year % 4 == 0) {
-    document.getElementById("output").innerHTML = "Leap";
-    output.classList.remove("output2");
-    output.classList.add("output1");
+  if (ln == 4) {
+    if (year % 4 == 0) {
+      document.getElementById("output").innerHTML = "Leap";
+      output.classList.remove("output2");
+      output.classList.add("output1");
+    } else {
+      document.getElementById("output").innerHTML = "Not Leap";
+      output.classList.add("output2");
+    }
   } else {
-    document.getElementById("output").innerHTML = "Not Leap";
-    output.classList.add("output2");
+    alert(year + " is Invalid Year");
   }
 };

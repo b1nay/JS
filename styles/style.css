@@ -6,6 +6,11 @@ a {
   text-decoration: none !important;
   color: inherit;
 }
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+}
 .btt {
   background-color: green;
   color: white;
