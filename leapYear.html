@@ -18,7 +18,7 @@
     </center>
     <script>
         function leap() {
-            let year = parseInt(document.getElementById("year"));
+            let year = parseInt(document.getElementById("year").value);
             if (year % 100 == 0 ? year % 400 == 0 : year % 4 == 0) {
 
                 document.getElementById("output").innerHTML = "Leap";
